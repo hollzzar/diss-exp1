@@ -1,0 +1,256 @@
+"participant","date_post","spk_accent","spk_bilingual","spk_ease","spk_fluency_1","spk_lang_1","spk_percep","spk_region","spk_accent_strength","spk_accent_type","spk_fluency_2","spk_lang_2","spk_sub_region","spk_country","variability","similarity","match_list","order","speaker"
+"596bac33670f410001fe9c07",2023-07-18 22:26:58,"Yes","Yes",3,4,"Portuguese",3,"Asia",4,"[""acc_ex"",""acc_l2""]",3,"English","Central",NA,"variant","control",1,"order1",6
+"5e38e79295ff561112eae457",2023-07-18 22:48:34,"Yes","No",2,5,"Spanish",2,"Americas",4,"[""acc_l2""]",NA,NA,"Central","Mexico","invariant","similar",1,"order1",6
+"5c3fd0d4c2d0b700017d02cd",2023-07-18 22:42:26,"Yes","Yes",3,4,"Russian",3,"Asia",3,"[""acc_social""]",3,"English","Southeastern",NA,"invariant","dissimilar",2,"order1",6
+"60fdab454b8c00448c10fa27",2023-07-18 22:40:51,"Yes","Yes",4,5,"Mandarin",4,"Asia",3,"[""acc_l2""]",3,"English","Eastern",NA,"variant","similar",1,"order1",6
+"6107a4b7744b9b0ca7328cee",2023-07-18 22:46:45,"Yes","Yes",3,5,"None of these",3,"Asia",3,"[""acc_social"",""acc_l2"",""acc_slp""]",4,"English","Southeastern",NA,"variant","similar",2,"order1",6
+"63d0ca70331be3a97cb7b1d1",2023-07-18 22:48:25,"Yes","Yes",3,5,"Russian",3,"Europe",3,"[""acc_l2""]",4,"English","Eastern",NA,"variant","dissimilar",2,"order1",6
+"5cc8039e3ef93000171c96b8",2023-07-18 22:41:10,"Yes","No",3,3,"Hindi",4,"Asia",4,"[""acc_ex""]",NA,NA,"Southeastern",NA,"variant","dissimilar",2,"order1",6
+"5aeab6e39e185a0001b9e272",2023-07-18 23:07:47,"Yes","Yes",3,5,"French",3,"Europe",4,"[""acc_ex""]",3,"English","Southern",NA,"invariant","dissimilar",1,"order1",6
+"6478e5fc76f5ecbc4f0ed353",2023-07-18 22:31:11,"Yes","Yes",3,5,"Mandarin",4,"Asia",3,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Southern",NA,"invariant","dissimilar",2,"order1",6
+"5ff6aa65306c94266070c467",2023-07-18 21:31:34,"Yes","Yes",2,3,"Russian",2,"Europe",3,"[""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"invariant","similar",1,"order1",6
+"63b6cc23f13731158517f900",2023-07-18 22:35:56,"Yes","Yes",3,4,"Hindi",3,"Asia",4,"[""acc_social"",""acc_ex"",""acc_l2""]",3,"English","Southeastern",NA,"variant","dissimilar",1,"order1",6
+"610cedfc867afaeac6af0954",2023-07-18 21:46:38,"Yes","Yes",3,4,"Portuguese",3,"Americas",3,"[""acc_social"",""acc_l2""]",3,"English","Southern","Argentina","invariant","dissimilar",1,"order1",6
+"6413665e5dec6a98797ef5ab",2023-07-18 22:01:19,"Yes","No",2,3,"None of these",3,"Americas",4,"[""acc_social"",""acc_l2"",""acc_ex""]",NA,NA,"Southern","Colombia","variant","similar",1,"order1",6
+"59d9d9cd8fd07a0001842484",2023-07-18 22:24:56,"Yes","Yes",2,5,"Spanish",4,"Americas",4,"[""acc_social"",""acc_l2""]",2,"English","Southern","Colombia","variant","similar",1,"order1",6
+"5be084ec4c397b0001ec3567",2023-07-18 22:22:30,"Yes","Yes",4,5,"Russian",3,"Europe",4,"[""acc_ex"",""acc_l2""]",4,"English","Eastern",NA,"invariant","dissimilar",2,"order1",6
+"5f2c760dfff10e03206a686b",2023-07-18 22:36:01,"Yes","No",3,2,"English",3,"Americas",3,"[""acc_l2"",""acc_slp""]",NA,NA,"Northern","United States of America","variant","similar",1,"order1",6
+"63d18647419ae52f5e141607",2023-07-18 22:34:26,"Yes","Yes",2,5,"Mandarin",2,"Asia",4,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Eastern",NA,"invariant","dissimilar",2,"order1",6
+"587418895c17910001ea4e75",2023-07-18 21:44:17,"Yes","Yes",4,1,"Spanish",4,"Americas",4,"[""acc_l2""]",4,"English","Southern","Colombia","variant","dissimilar",1,"order1",6
+"612c6bd26f5f81c5765989d9",2023-07-18 22:55:13,"Yes","Yes",2,1,"Hindi",2,"Oceania",4,"[""acc_l2"",""acc_social""]",3,"English","Melanesia",NA,"variant","control",2,"order1",6
+"5fa935b3d330fa0429da624a",2023-07-18 21:45:29,"Yes","Yes",2,4,"Mandarin",3,"Asia",5,"[""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"variant","dissimilar",1,"order1",6
+"6138f7e0ad42e592ca5f2024",2023-07-18 22:50:17,"Yes","Yes",2,4,"Portuguese",2,"Europe",5,"[""acc_l2""]",1,"English","Eastern",NA,"invariant","similar",1,"order1",6
+"60bc011503db109b7d46851d",2023-07-18 21:46:47,"Yes","Yes",3,4,"French",3,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Western",NA,"variant","similar",2,"order1",6
+"630981b0f861918e8174a43e",2023-07-18 22:48:58,"Yes","No",2,4,"Hindi",2,"Asia",4,"[""acc_l2"",""acc_ex""]",NA,NA,"Southern",NA,"variant","similar",1,"order1",6
+"60fd05fdd8f4081c41972a1b",2023-07-18 22:06:07,"Yes","Yes",3,5,"French",3,"Europe",3,"[""acc_ex"",""acc_l2""]",4,"English","Western",NA,"invariant","similar",2,"order1",6
+"63034df51d918e1e3b97e5ce",2023-07-18 22:07:56,"Yes","Yes",2,5,"Portuguese",3,"Asia",4,"[""acc_l2""]",3,"English","Southern",NA,"variant","dissimilar",1,"order1",6
+"5f5834134283933a1c3b42d0",2023-07-18 22:11:32,"Yes","Yes",2,5,"Russian",3,"Europe",4,"[""acc_l2"",""acc_ex""]",3,"English","Eastern",NA,"variant","dissimilar",2,"order1",6
+"6234c1abfc04a4163c09a78f",2023-07-18 23:18:43,"Yes","No",3,3,"English",3,"Europe",4,"[""acc_ex""]",NA,NA,"Northern",NA,"invariant","similar",1,"order1",6
+"5db598f48cf15c000b57eb36",2023-07-18 22:15:00,"Yes","No",2,5,"Bengali",4,"Asia",4,"[""acc_ex"",""acc_l2"",""acc_social""]",NA,NA,"Southern",NA,"invariant","similar",1,"order1",6
+"5e2a425609072a0abb76094b",2023-07-18 22:19:10,"Yes","Yes",4,5,"Russian",4,"Europe",4,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","similar",2,"order1",6
+"6116f60ae8f48f7d1244e8d3",2023-07-18 23:22:10,"Yes","Yes",3,5,"Spanish",3,"Americas",4,"[""acc_ex"",""acc_l2"",""acc_social""]",3,"English","Southern","Ecuador","invariant","similar",2,"order1",6
+"5bdc4c1b75ae900001f30a87",2023-07-18 22:24:58,"Yes","Yes",2,5,"Mandarin",2,"Asia",5,"[""acc_l2""]",5,"Bengali","Southeastern",NA,"invariant","similar",1,"order1",6
+"609ac8ca9e4928ec75d40a10",2023-07-18 22:23:54,"Yes","Yes",3,5,"None of these",3,"Asia",5,"[""acc_l2""]",5,"None of these","Eastern",NA,"invariant","similar",2,"order1",6
+"63d410114a361b7bee9c12b9",2023-07-18 23:29:05,"Yes","No",2,5,"Russian",2,"Europe",4,"[""acc_ex"",""acc_l2""]",NA,NA,"Eastern",NA,"variant","dissimilar",1,"order1",6
+"63f7870b7fabda95fb6586d0",2023-07-18 22:29:53,"Yes","No",3,5,"Spanish",4,"Americas",4,"[""acc_l2""]",NA,NA,"Southern","Colombia","invariant","dissimilar",2,"order1",6
+"5ba064c10d4416000157a224",2023-07-18 22:41:34,"Yes","Yes",3,4,"Russian",3,"Europe",4,"[""acc_ex"",""acc_l2""]",2,"English","Eastern",NA,"invariant","dissimilar",2,"order1",6
+"5b182365316c630001abff4f",2023-07-18 22:41:25,"Yes","Yes",3,4,"Russian",3,"Europe",4,"[""acc_ex"",""acc_l2"",""acc_social""]",4,"English","Eastern",NA,"variant","dissimilar",1,"order1",6
+"5bef87523d79ff0001275154",2023-07-18 22:53:48,"Yes","Yes",3,4,"Mandarin",3,"Asia",3,"[""acc_l2""]",4,"Mandarin","Western",NA,"invariant","similar",1,"order1",6
+"5930c7fdfa699e0001017cc1",2023-07-18 22:49:56,"Yes","Yes",3,5,"Spanish",3,"Asia",5,"[""acc_l2"",""acc_social""]",4,"English","Eastern",NA,"variant","control",2,"order1",6
+"5d67476c0ca617001699fe7a",2023-07-18 22:53:21,"Yes","Yes",2,5,"Bengali",3,"Asia",5,"[""acc_l2""]",2,"English","Southern",NA,"invariant","dissimilar",1,"order1",6
+"5a348ea750833c0001ee9550",2023-07-18 23:09:58,"Yes","Yes",2,4,"Bengali",2,"Asia",5,"[""acc_social"",""acc_l2""]",3,"English","Western",NA,"variant","control",2,"order1",6
+"63210b26bd58960c97b47ddc",2023-07-18 23:07:31,"Yes","Yes",1,4,"Urdu",1,"Asia",5,"[""acc_ex"",""acc_social"",""acc_l2""]",1,"English","Southern",NA,"invariant","similar",2,"order1",6
+"5658000ca9872d0011e1ba26",2023-07-18 23:21:39,"Yes","Yes",3,5,"Spanish",3,"Americas",4,"[""acc_l2""]",3,"English","Central","Mexico","variant","dissimilar",1,"order1",6
+"6296290ec41bde1525dbb77e",2023-07-18 23:47:39,"Yes","No",2,4,"Spanish",2,"Americas",4,"[""acc_social"",""acc_l2"",""acc_ex""]",5,NA,"Southern","Colombia","variant","control",1,"order1",6
+"59bb0a533a9ab6000111944a",2023-07-19 01:18:30,"Yes","Yes",2,4,"Spanish",3,"Americas",4,"[""acc_l2""]",3,"None of these","Central","Panama","variant","control",1,"order1",6
+"5d09895e65eb3400189cc207",2023-07-19 01:27:54,"Yes","Yes",3,1,"Russian",2,"Europe",5,"[""acc_l2""]",5,"English","Eastern",NA,"variant","similar",2,"order1",6
+"5e7d031be805560ae6b93dba",2023-09-07 18:37:00,"Yes","Yes",3,5,"French",3,"Europe",4,"[""acc_l2""]",2,"English","Western",NA,"invariant","dissimilar",3,"order1",6
+"6294ea611ee4f49421c6b905",2023-09-07 18:52:26,"Yes","Yes",2,5,"Portuguese",3,"Asia",4,"[""acc_ex""]",3,"English","Southern",NA,"variant","control",3,"order1",6
+"631b883c9a6d6722114a6eed",2023-09-07 19:01:54,"Yes","Yes",3,4,"Standard Arabic",4,"Asia",3,"[""acc_social""]",4,"English","Southern",NA,"variant","dissimilar",3,"order1",6
+"63d00622fd37f382d3ce2ec1",2023-09-07 18:24:49,"Yes","Yes",2,5,"Spanish",3,"Europe",4,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Southern",NA,"invariant","control",3,"order1",6
+"631a68ee10ec68377cb03457",2023-09-07 18:34:57,"Yes","Yes",2,1,"Spanish",2,"Americas",5,"[""acc_l2""]",3,"English","Southern","Chile","variant","dissimilar",3,"order1",6
+"57c4f62865da940001f6b7e4",2023-09-07 19:03:50,"Yes","Yes",4,5,"Mandarin",4,"Asia",4,"[""acc_l2"",""acc_ex""]",4,"English","Central",NA,"variant","dissimilar",3,"order1",6
+"598fba148380cc00012a3ce7",2023-09-07 19:01:49,"Yes","Yes",3,4,"French",3,"Europe",4,"[""acc_ex""]",2,"English","Western",NA,"variant","dissimilar",3,"order1",6
+"5be2741f86b6f3000130e0fd",2023-09-07 18:31:43,"Yes","Yes",2,5,"Mandarin",3,"Asia",5,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Central",NA,"invariant","similar",3,"order1",6
+"5c8d1bee1bb19f00019d519e",2023-09-07 18:44:56,"Yes","Yes",3,5,"Mandarin",3,"Asia",4,"[""acc_l2"",""acc_social""]",5,"English","Eastern",NA,"invariant","control",3,"order1",6
+"5ba863a346de410001ecfb2a",2023-09-07 18:57:01,"Yes","Yes",3,1,"Bengali",3,"Asia",3,"[""acc_l2""]",3,"English","Western",NA,"invariant","control",3,"order1",6
+"5e7995061a79d455837f95e1",2023-09-07 18:53:56,"Yes","Yes",2,5,"Russian",2,"Europe",4,"[""acc_ex""]",3,"English","Eastern",NA,"invariant","similar",3,"order1",6
+"63e548215b42b3f3aa069dc2",2023-09-07 18:54:24,"Yes","Yes",3,3,"Russian",3,"Europe",4,"[""acc_social""]",3,"English","Eastern",NA,"invariant","dissimilar",3,"order1",6
+"60a7d7b70d3cf8f48a8a490d",2023-09-07 18:56:20,"Yes","Yes",1,5,"None of these",1,"Africa",5,"[""acc_ex"",""acc_l2""]",2,"English","Middle",NA,"invariant","similar",3,"order1",6
+"5c11f3face422b0001d69416",2023-09-07 18:59:05,"Yes","Yes",3,1,"Standard Arabic",4,"Africa",4,"[""acc_l2""]",5,"English","Northern",NA,"invariant","similar",3,"order1",6
+"63d7e469c2a30fc463e06b5d",2023-09-07 18:55:27,"Yes","Yes",4,5,"Hindi",4,"Asia",4,"[""acc_ex"",""acc_l2""]",4,"English","Southern",NA,"invariant","dissimilar",3,"order1",6
+"63ea63669423c84daf2c5dbd",2023-09-07 19:03:30,"Yes","Yes",2,5,"English",3,"Americas",4,"[""acc_ex""]",4,"Spanish","Central","Mexico","variant","similar",3,"order1",6
+"577d11f88b3e2300016d74a0",2023-09-07 19:04:41,"Yes","Yes",3,5,"Spanish",4,"Americas",2,"[""acc_l2"",""acc_ex"",""acc_social""]",5,"English","Southern","Argentina","invariant","control",3,"order1",6
+"62964d27c2b2866faa677493",2023-09-07 19:13:17,"Yes","Yes",3,1,"Russian",3,"Europe",3,"[""acc_ex""]",5,"Russian","Northern",NA,"invariant","similar",3,"order1",6
+"5d901b10d7a21a001d635d12",2023-09-07 20:13:57,"Yes","Yes",2,3,"Russian",3,"Europe",3,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","control",3,"order1",6
+"5b97f70161c19e00018db4a8",2023-09-07 21:50:58,"Yes","Yes",2,5,"Russian",2,"Europe",5,"[""acc_l2""]",2,"English","Eastern",NA,"variant","similar",3,"order1",6
+"5dd0098e01fadf0fa6c3a15f",2023-07-19 04:24:39,"Yes","Yes",3,5,"Urdu",3,"Asia",3,"[""acc_l2""]",3,"English","Southern",NA,"invariant","dissimilar",1,"order2",3
+"5f127dfdebc35e072317bc00",2023-07-19 04:18:25,"Yes","Yes",2,1,"Portuguese",2,"Europe",5,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Southern",NA,"variant","similar",2,"order2",3
+"6090578fb2299eacaec32b7a",2023-07-19 04:50:15,"Yes","Yes",2,4,"Russian",2,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"invariant","dissimilar",1,"order2",3
+"63d77a647dbf6c0c53b0d375",2023-07-19 04:59:37,"Yes","Yes",3,5,"Spanish",3,"Europe",4,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Western",NA,"variant","similar",2,"order2",3
+"64018f4d1a16dfe2b0f7c552",2023-07-19 04:58:45,"Yes","Yes",4,3,"Russian",4,"Europe",4,"[""acc_l2""]",5,"English","Eastern",NA,"invariant","dissimilar",2,"order2",3
+"56bd7bf3d4e2180005a86846",2023-07-19 05:14:41,"Yes","Yes",3,4,"Standard Arabic",3,"Americas",4,"[""acc_l2"",""acc_social""]",2,"English","Southern","Peru","invariant","similar",2,"order2",3
+"6109b95a3954ea5afdd7add9",2023-07-19 04:16:57,"Yes","Yes",3,3,"Standard Arabic",3,"Europe",4,"[""acc_l2""]",2,"English","Eastern",NA,"invariant","dissimilar",2,"order2",3
+"63b6be5e93fb553e9f17f8a6",2023-07-19 04:21:00,"Yes","Yes",2,4,"Russian",3,"Europe",5,"[""acc_ex"",""acc_social"",""acc_l2""]",2,"English","Eastern",NA,"invariant","dissimilar",1,"order2",3
+"5fc17e97c8c4d714655b2c6f",2023-07-19 03:59:10,"Yes","Yes",3,5,"Standard Arabic",3,"Africa",3,"[""acc_l2"",""acc_ex""]",3,"English","Northern",NA,"variant","control",1,"order2",3
+"5a6f57166923df0001ef8d02",2023-07-19 03:57:01,"Yes","Yes",3,5,"Spanish",3,"Americas",3,"[""acc_ex""]",3,"English","Central","Costa Rica","variant","control",1,"order2",3
+"5e89550b220e2f5f277597f0",2023-07-19 03:21:50,"Yes","Yes",2,3,"Spanish",3,"Americas",4,"[""acc_social"",""acc_l2""]",3,"English","Southern","Argentina","invariant","similar",2,"order2",3
+"610c35b435b38d01814c62bb",2023-07-19 04:23:25,"Yes","Yes",3,5,"Portuguese",3,"Asia",4,"[""acc_l2""]",5,"Spanish","Southern",NA,"invariant","dissimilar",2,"order2",3
+"5f7e6f9c1212c514f9437e3a",2023-07-19 04:49:54,"Yes","Yes",3,4,"Hindi",4,"Asia",5,"[""acc_l2""]",4,"Hindi","Southeastern",NA,"invariant","similar",1,"order2",3
+"63be1e8422e3cbf3f1aec1ed",2023-07-19 04:45:18,"Yes","Yes",3,5,"Mandarin",2,"Asia",5,"[""acc_l2""]",3,"English","Western",NA,"variant","control",2,"order2",3
+"5ff94e71c59814230b0fb713",2023-07-19 04:58:28,"Yes","Yes",3,5,"Portuguese",3,"Europe",3,"[""acc_l2""]",4,"English","Southern",NA,"variant","control",1,"order2",3
+"5dc8db55d210e463580cf6f5",2023-07-19 03:59:36,"Yes","Yes",1,5,"Spanish",1,"Americas",5,"[""acc_social""]",5,"Spanish","Southern","Brazil","variant","dissimilar",1,"order2",3
+"5cab7cc86d3a6e001519d9e9",2023-07-19 04:11:09,"Yes","Yes",3,5,"Russian",3,"Europe",5,"[""acc_l2"",""acc_social"",""acc_ex""]",3,"English","Eastern",NA,"invariant","similar",1,"order2",3
+"60a69e84d2f871b61d608e89",2023-07-19 05:15:46,"Yes","Yes",2,5,"Spanish",3,"Americas",5,"[""acc_ex"",""acc_l2"",""acc_social""]",3,"English","Central","Mexico","variant","control",2,"order2",3
+"5aee513f3606ab0001b92b29",2023-07-19 05:13:49,"Yes","Yes",4,5,"Mandarin",4,"Asia",3,"[""acc_social""]",4,"English","Central",NA,"variant","control",1,"order2",3
+"6054e1ddb68b58dd23242765",2023-07-19 04:09:40,"Yes","Yes",4,5,"Russian",4,"Europe",3,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","dissimilar",2,"order2",3
+"5dce29700ad506063969a4a5",2023-07-19 04:21:30,"Yes","No",4,5,"English",4,"Americas",2,"[""acc_us""]",NA,NA,"Northern","United States of America","invariant","dissimilar",1,"order2",3
+"5f0a7dec44c42c19a6c9f6d9",2023-07-19 05:29:40,"Yes","Yes",2,1,"Mandarin",3,"Asia",5,"[""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"variant","control",1,"order2",3
+"63d83e6e48dd3f8da9458dd3",2023-07-19 04:29:31,"Yes","Yes",3,3,"Hindi",3,"Asia",5,"[""acc_l2"",""acc_ex"",""acc_social""]",3,"English","Southern",NA,"variant","similar",1,"order2",3
+"5d5e4baff521f100166c5d3a",2023-07-19 05:37:00,"Yes","Yes",3,5,"Hindi",4,"Asia",4,"[""acc_social"",""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"variant","similar",1,"order2",3
+"601c695c141cd278d59f3feb",2023-07-19 05:55:50,"Yes","Yes",1,5,"Hindi",1,"Asia",5,"[""acc_l2""]",3,"English","Southern",NA,"variant","control",2,"order2",3
+"63d45eb3b02798ba45f00225",2023-07-19 16:25:21,"Yes","Yes",3,5,"Hindi",3,"Europe",4,"[""acc_l2"",""acc_social"",""acc_ex""]",5,"English","Southern",NA,"variant","similar",2,"order2",3
+"63dc7c4191d5e30193f1db36",2023-07-19 17:09:20,"Yes","Yes",3,5,"Russian",3,"Europe",3,"[""acc_ex"",""acc_l2""]",4,"English","Eastern",NA,"invariant","similar",1,"order2",3
+"63026a8fd8429b224cd2a134",2023-07-19 17:50:18,"Yes","Yes",2,5,"Spanish",4,"Americas",4,"[""acc_ex""]",3,"English","Caribbean","Puerto Rico","variant","similar",2,"order2",3
+"631b4849c2daec6a4966605c",2023-07-19 04:28:26,"Yes","Yes",2,3,"None of these",3,"Europe",5,"[""acc_ex""]",5,"None of these","Western",NA,"variant","similar",1,"order2",3
+"614f58258eaf7063aa888d90",2023-07-19 04:43:24,"Yes","Yes",3,5,"Russian",4,"Europe",4,"[""acc_ex"",""acc_l2""]",4,"English","Eastern",NA,"invariant","dissimilar",2,"order2",3
+"5c2dae2110677f0001dd1137",2023-07-19 04:36:53,"Yes","Yes",2,3,"Russian",3,"Europe",4,"[""acc_ex""]",4,"English","Eastern",NA,"invariant","dissimilar",1,"order2",3
+"627809c52874925390a423a6",2023-07-19 04:52:11,"Yes","Yes",4,5,"Spanish",4,"Americas",4,"[""acc_l2""]",5,"Spanish","Southern","Brazil","invariant","similar",1,"order2",3
+"5c574d3f53fba80001bd302e",2023-07-19 05:01:45,"Yes","Yes",3,3,"French",2,"Africa",4,"[""acc_social"",""acc_l2""]",3,"English","Southern",NA,"invariant","similar",2,"order2",3
+"63e5a6690eeedc20da056717",2023-07-19 05:10:58,"Yes","Yes",3,5,"Hindi",4,"Asia",5,"[""acc_ex"",""acc_l2""]",4,"English","Southern",NA,"invariant","similar",2,"order2",3
+"59ff81fd5d06850001afeeab",2023-07-19 05:11:57,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_l2"",""acc_social""]",2,"English","Southern",NA,"variant","control",1,"order2",3
+"5e2394c45514e6642dd8c16a",2023-09-08 01:01:15,"Yes","No",3,3,"Bengali",3,"Asia",4,"[""acc_ex"",""acc_l2"",""acc_social""]",NA,NA,"Southern",NA,"invariant","dissimilar",3,"order2",3
+"592bb32c943e670001cde123",2023-09-08 01:42:52,"Yes","Yes",2,5,"Russian",3,"Asia",4,"[""acc_l2""]",3,"English","Western",NA,"invariant","dissimilar",3,"order2",3
+"5f66f0768edb5b00091b6f25",2023-09-08 01:13:11,"Yes","Yes",3,5,"Russian",4,"Europe",3,"[""acc_l2"",""acc_ex""]",4,"English","Eastern",NA,"invariant","dissimilar",3,"order2",3
+"6074b929f753216d88c77e88",2023-09-08 01:20:24,"Yes","Yes",3,5,"Russian",3,"Europe",4,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","control",3,"order2",3
+"610c42860e3a1a52be2b77da",2023-09-07 23:53:47,"Yes","Yes",3,1,"Standard Arabic",3,"Europe",4,"[""acc_ex"",""acc_l2""]",4,"English","Northern",NA,"invariant","control",3,"order2",3
+"63d81e2fb6c8f0da25fea602",2023-09-08 00:24:03,"Yes","Yes",3,4,"Russian",3,"Europe",4,"[""acc_ex""]",3,"English","Northern",NA,"variant","similar",3,"order2",3
+"55c694e3fdf99b6c4f28595f",2023-09-08 00:32:14,"Yes","Yes",3,5,"Russian",3,"Europe",5,"[""acc_social"",""acc_l2""]",3,"English","Eastern",NA,"variant","dissimilar",3,"order2",3
+"5ec6df52f52d1111598b1221",2023-09-08 01:08:59,"Yes","Yes",3,4,"Spanish",4,"Americas",3,"[""acc_l2""]",3,"English","Central","Mexico","invariant","similar",3,"order2",3
+"5d3695969749cc00165c222f",2023-09-08 01:06:19,"Yes","Yes",3,1,"Hindi",3,"Asia",4,"[""acc_l2"",""acc_slp"",""acc_social""]",3,"Hindi","Southern",NA,"variant","control",3,"order2",3
+"55a75835fdf99b26395fae40",2023-09-08 01:11:34,"Yes","Yes",3,5,"Spanish",4,"Americas",4,"[""acc_l2"",""acc_social""]",4,"English","Central","Mexico","invariant","control",3,"order2",3
+"5dbf704fa3f5cb40876271fc",2023-09-08 01:25:34,"Yes","Yes",2,4,"Hindi",3,"Asia",4,"[""acc_l2"",""acc_social""]",2,"Standard Arabic","Central",NA,"invariant","similar",3,"order2",3
+"5fadd628cd4e9e1c42dab969",2023-09-08 01:24:30,"Yes","Yes",4,5,"Hindi",4,"Asia",3,"[""acc_ex""]",4,"English","Southern",NA,"invariant","control",3,"order2",3
+"60220af9eeca542c5042d457",2023-09-08 00:57:18,"Yes","Yes",3,4,"None of these",3,"Africa",4,"[""acc_social"",""acc_l2"",""acc_ex""]",5,"English","Northern",NA,"variant","control",3,"order2",3
+"5ec0ba1bfa01894cceaa1b8e",2023-09-08 00:57:31,"Yes","Yes",3,5,"Russian",3,"Europe",4,"[""acc_l2""]",3,"English","Western",NA,"variant","dissimilar",3,"order2",3
+"631664e2a5d07c0ad889cf91",2023-09-08 01:06:00,"Yes","Yes",2,5,"Russian",2,"Europe",4,"[""acc_l2"",""acc_ex"",""acc_social""]",2,"English","Eastern",NA,"variant","control",3,"order2",3
+"5af835d8e19f8c00019e6dc0",2023-09-08 01:11:51,"Yes","Yes",4,3,"Mandarin",4,"Asia",3,"[""acc_social""]",4,"English","Central",NA,"invariant","control",3,"order2",3
+"63ea5b93d1c6d38e1f57dcfa",2023-09-08 01:13:10,"Yes","Yes",3,5,"Russian",3,"Europe",4,"[""acc_l2""]",5,"French","Eastern",NA,"variant","dissimilar",3,"order2",3
+"614e2b2bd900d5f91096ac12",2023-09-08 01:36:37,"Yes","Yes",2,5,"Spanish",4,"Europe",4,"[""acc_l2""]",4,"English","Eastern",NA,"variant","similar",3,"order2",3
+"581d38509b5b8800014d507e",2023-09-08 03:09:49,"Yes","Yes",3,5,"Spanish",4,"Americas",4,"[""acc_l2""]",4,"English","Southern","Colombia","variant","dissimilar",3,"order2",3
+"60fcc00af3ec0d2d4b95c4be",2023-07-19 21:23:45,"Yes","Yes",4,5,"Portuguese",5,"Americas",3,"[""acc_l2"",""acc_ex""]",2,"Mandarin","Southern","Brazil","variant","dissimilar",2,"order3",4
+"5f1cba909780db13786ebe77",2023-07-19 21:37:04,"Yes","Yes",3,4,"None of these",4,"Asia",3,"[""acc_social""]",4,"English","Southeastern",NA,"variant","control",1,"order3",4
+"615a0ac5438649c5134564f1",2023-07-19 21:52:32,"Yes","No",3,4,"Hindi",4,"Europe",3,"[""acc_l2""]",NA,NA,"Northern",NA,"variant","similar",2,"order3",4
+"6400d8d5cc4ede5d5619eb4f",2023-07-19 21:42:45,"Yes","Yes",2,4,"Spanish",3,"Americas",4,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Southern","Chile","invariant","similar",2,"order3",4
+"5751d7ab330ae900070385c2",2023-07-19 19:59:36,"Yes","Yes",3,1,"Mandarin",3,"Asia",3,"[""acc_l2"",""acc_social""]",4,"Mandarin","Central",NA,"invariant","similar",2,"order3",4
+"6108781e0d1dd936d2b75432",2023-07-19 21:51:20,"Yes","Yes",4,5,"Russian",4,"Asia",3,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Central",NA,"variant","dissimilar",2,"order3",4
+"61351c3a1e3e96156bc86116",2023-07-19 19:51:41,"Yes","Yes",3,3,"French",3,"Europe",4,"[""acc_l2""]",3,"English","Eastern",NA,"variant","control",2,"order3",4
+"60ef44f89b4d67be02d8eca9",2023-07-19 21:53:30,"Yes","Yes",5,5,"Hindi",5,"Asia",4,"[""acc_l2"",""acc_ex""]",3,"English","Southern",NA,"invariant","dissimilar",1,"order3",4
+"5fd5381b5807b616d910c586",2023-07-19 21:04:34,"Yes","Yes",2,5,"Spanish",2,"Americas",4,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Central","Mexico","variant","dissimilar",1,"order3",4
+"5eb81d360943fe74d6aba62b",2023-07-19 21:40:08,"Yes","No",2,3,"Spanish",3,"Americas",4,"[""acc_l2""]",NA,NA,"Central","Mexico","variant","similar",1,"order3",4
+"5ec67c1f9d0f0906b783865f",2023-07-19 21:36:22,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_l2""]",4,"English","Southern",NA,"variant","similar",1,"order3",4
+"60e7044ddc2523fab6cbc0cd",2023-07-19 21:54:06,"Yes","Yes",3,1,"Spanish",3,"Americas",3,"[""acc_l2""]",5,"English","Central","Mexico","variant","control",1,"order3",4
+"62e02b1ed5b0fbc1b1dc09e7",2023-07-19 21:50:40,"Yes","No",2,5,"Russian",3,"Europe",4,"[""acc_l2""]",NA,NA,"Eastern",NA,"variant","control",1,"order3",4
+"616d0c1b16a0437469b6cd74",2023-07-19 20:53:24,"Yes","Yes",4,5,"Mandarin",4,"Asia",4,"[""acc_ex""]",4,"English","Southeastern",NA,"variant","dissimilar",2,"order3",4
+"63655ebbb1b1d02244d46c45",2023-07-19 22:03:49,"No","Yes",3,4,"Russian",3,"Europe",NA,NA,3,"English","Northern",NA,"variant","dissimilar",1,"order3",4
+"6400db7df5056f80cbbdf386",2023-07-19 21:19:18,"Yes","Yes",3,4,"Mandarin",3,"Asia",3,"[""acc_l2"",""acc_social""]",3,"English","Southeastern",NA,"variant","dissimilar",1,"order3",4
+"590f901cdcc7b30001eed302",2023-07-19 21:29:46,"Yes","Yes",2,5,"Mandarin",2,"Asia",4,"[""acc_l2""]",3,"English","Western",NA,"variant","control",1,"order3",4
+"632096b5574155e8727c50cc",2023-07-19 21:32:25,"Yes","Yes",2,5,"Standard Arabic",3,"Asia",5,"[""acc_l2""]",4,"English","Western",NA,"variant","similar",2,"order3",4
+"628494ff07588fd08c37117b",2023-07-19 21:42:15,"Yes","Yes",3,5,"Spanish",3,"Europe",5,"[""acc_l2""]",3,"English","Southern",NA,"variant","dissimilar",1,"order3",4
+"61082ceb08c185b7f1f61331",2023-07-19 21:39:58,"Yes","Yes",1,5,"Portuguese",2,"Europe",5,"[""acc_l2""]",3,"English","Eastern",NA,"variant","similar",2,"order3",4
+"63de2e4a0c6fd41343f82a79",2023-07-20 01:40:01,"Yes","Yes",2,5,"Mandarin",2,"Asia",4,"[""acc_ex"",""acc_social"",""acc_l2"",""acc_slp""]",2,"English","Eastern",NA,"variant","control",2,"order3",4
+"60f5d5e358c70ad7a534bc50",2023-07-19 21:42:43,"Yes","Yes",3,5,"Spanish",3,"Americas",4,"[""acc_l2""]",3,"English","Southern","Colombia","invariant","dissimilar",2,"order3",4
+"5dd9923922749791b319fc19",2023-07-19 22:03:55,"Yes","Yes",3,5,"Bengali",4,"Asia",5,"[""acc_social""]",3,"English","Southeastern",NA,"variant","dissimilar",2,"order3",4
+"613461a8b9035cf9b29ad84d",2023-07-19 21:46:58,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_l2""]",4,"English","Southern",NA,"variant","dissimilar",1,"order3",4
+"5afa19a4f856320001cf920f",2023-07-19 21:51:12,"Yes","Yes",3,5,"Mandarin",3,"Asia",3,"[""acc_l2""]",4,"English","Eastern",NA,"invariant","dissimilar",2,"order3",4
+"5bc0ac845a09ea00012e2d30",2023-07-19 04:58:32,"Yes","Yes",3,5,"Standard Arabic",3,"Africa",4,"[""acc_ex"",""acc_l2""]",4,"English","Northern",NA,"variant","control",1,"order3",4
+"5ccc60abe787e000167f8143",2023-07-19 21:55:40,"Yes","Yes",3,3,"Hindi",4,"Africa",5,"[""acc_l2""]",3,"English","Southern",NA,"variant","dissimilar",2,"order3",4
+"6282566b46de7431f04213f6",2023-07-20 00:06:28,"Yes","Yes",3,5,"Standard Arabic",3,"Asia",3,"[""acc_l2""]",4,"English","Eastern",NA,"variant","control",2,"order3",4
+"60fcdfac81bec43078236e55",2023-07-20 01:06:59,"Yes","Yes",4,5,"Standard Arabic",4,"Africa",4,"[""acc_ex"",""acc_l2""]",5,"English","Eastern",NA,"variant","control",2,"order3",4
+"60f75bfcee2ff53ef6a14c89",2023-07-20 00:17:39,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_ex"",""acc_l2""]",4,"English","Southern",NA,"variant","dissimilar",2,"order3",4
+"5eedaabd4b84b8000b78b0b5",2023-09-08 20:29:19,"Yes","Yes",2,4,"Standard Arabic",2,"Oceania",5,"[""acc_ex""]",4,"Standard Arabic","Polynesia",NA,"variant","similar",3,"order3",4
+"596fea64a5c32a0001584755",2023-09-08 20:32:22,"Yes","Yes",2,5,"Spanish",2,"Americas",5,"[""acc_ex""]",3,"English","Southern","Brazil","invariant","similar",3,"order3",4
+"63d83a19b8acced30d2e0d32",2023-09-08 21:51:34,"Yes","Yes",3,4,"Mandarin",3,"Asia",4,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Western",NA,"variant","dissimilar",3,"order3",4
+"5f00ec86304f7322eb8dfa41",2023-09-08 20:00:50,"Yes","Yes",2,5,"Russian",3,"Europe",5,"[""acc_social"",""acc_l2""]",4,"English","Eastern",NA,"invariant","dissimilar",3,"order3",4
+"5efec7794ff2093d25ffa6d0",2023-09-08 19:25:55,"Yes","Yes",2,4,"French",3,"Europe",5,"[""acc_ex""]",4,"Bengali","Northern",NA,"variant","control",3,"order3",4
+"63e52399159a69bf0ea848c6",2023-09-08 20:22:11,"Yes","Yes",2,5,"Spanish",4,"Americas",4,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"Portuguese","Southern","Brazil","invariant","similar",3,"order3",4
+"60e21c244ee73fb4d76e7f74",2023-09-08 20:31:04,"Yes","Yes",3,4,"Spanish",3,"Americas",4,"[""acc_l2""]",4,"English","Central","Mexico","variant","control",3,"order3",4
+"58635484a73baa00010db537",2023-09-08 20:41:07,"Yes","Yes",3,5,"French",3,"Europe",4,"[""acc_ex""]",4,"English","Southern",NA,"invariant","similar",3,"order3",4
+"63d8766016c0bfcd19d3c732",2023-09-08 19:39:21,"Yes","Yes",2,3,"Standard Arabic",3,"Oceania",4,"[""acc_l2"",""acc_ex""]",3,"English","Polynesia",NA,"variant","dissimilar",3,"order3",4
+"5f4a835e9e84256238129995",2023-09-08 20:08:06,"Yes","Yes",3,5,"Mandarin",3,"Asia",5,"[""acc_ex"",""acc_social""]",4,"English","Eastern",NA,"variant","control",3,"order3",4
+"5efe8c25e921d23a9daec079",2023-09-08 20:15:03,"Yes","Yes",3,4,"Bengali",3,"Europe",5,"[""acc_l2"",""acc_ex""]",3,"English","Eastern",NA,"variant","control",3,"order3",4
+"648b17e9f65b263c62471c85",2023-09-08 20:27:45,"Yes","Yes",3,3,"None of these",4,"Americas",4,"[""acc_social""]",5,"English","Southern","Chile","variant","dissimilar",3,"order3",4
+"600cb9f465eb1c40307723a8",2023-09-08 20:37:10,"Yes","Yes",3,5,"Standard Arabic",3,"Asia",4,"[""acc_social"",""acc_l2"",""acc_slp""]",3,"English","Western",NA,"invariant","control",3,"order3",4
+"62cca376ba1d7ea6a18d1d6c",2023-09-08 20:32:56,"Yes","Yes",3,5,"Mandarin",3,"Asia",3,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","control",3,"order3",4
+"63bc9e8cd8106f8d94c636d4",2023-09-08 20:45:47,"Yes","Yes",2,3,"Standard Arabic",2,"Asia",2,"[""acc_l2""]",2,"English","Western","United States of America","invariant","similar",3,"order3",4
+"5f5ab115b8e6411bcb5dadf1",2023-09-08 21:18:39,"Yes","Yes",3,5,"Bengali",3,"Asia",3,"[""acc_ex""]",4,"English","Southeastern",NA,"invariant","control",3,"order3",4
+"5e5080883771350caf2d9fda",2023-09-08 21:26:10,"Yes","Yes",3,5,"Hindi",3,"Asia",4,"[""acc_l2"",""acc_ex"",""acc_social""]",3,"English","Southern",NA,"invariant","similar",3,"order3",4
+"6316212c1109a3b1bac89fe6",2023-09-08 21:42:56,"Yes","Yes",3,5,"Portuguese",4,"Europe",5,"[""acc_l2""]",4,"English","Eastern",NA,"variant","control",3,"order3",4
+"614bbefcf812159d1f0bc2e3",2023-09-09 03:27:26,"Yes","Yes",3,5,"Portuguese",3,"Europe",3,"[""acc_ex""]",5,"Portuguese","Western",NA,"variant","control",3,"order3",4
+"645a6d7feec0c7415d240d95",2023-09-09 16:30:00,"Yes","No",3,1,"Spanish",3,"Americas",4,"[""acc_l2""]",NA,NA,"Southern","Argentina","variant","control",3,"order3",4
+"631659ad8e5354f16aef7249",2023-07-20 03:05:59,"Yes","Yes",3,5,"Hindi",4,"Asia",5,"[""acc_ex"",""acc_l2""]",5,"English","Western",NA,"variant","similar",2,"order4",5
+"615dd1eb2702a672f7db49f1",2023-07-20 04:11:07,"Yes","Yes",3,5,"Hindi",3,"Asia",3,"[""acc_l2"",""acc_social""]",4,"English","Central",NA,"variant","control",2,"order4",5
+"5c59e6519dd64d00018adaa8",2023-07-20 05:20:04,"Yes","No",2,3,"Mandarin",3,"Asia",3,"[""acc_social""]",NA,NA,"Eastern",NA,"invariant","similar",1,"order4",5
+"5ebb4e079797f9127c0f03ab",2023-07-20 05:26:28,"Yes","Yes",3,5,"Hindi",3,"Asia",3,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Western",NA,"invariant","dissimilar",2,"order4",5
+"610ec31b33de16c5167f3062",2023-07-20 05:26:27,"Yes","Yes",1,3,"Standard Arabic",2,"Europe",5,"[""acc_ex""]",3,"English","Eastern",NA,"variant","control",2,"order4",5
+"5a1efc2b517dfb00013dd370",2023-07-20 05:31:14,"Yes","Yes",2,4,"Spanish",3,"Americas",4,"[""acc_l2""]",2,"English","Southern","Brazil","variant","similar",2,"order4",5
+"5b4d41e13d01bd0001ec46c2",2023-07-20 05:36:48,"Yes","Yes",1,5,"Russian",3,"Europe",5,"[""acc_ex"",""acc_l2"",""acc_slp""]",2,"English","Eastern",NA,"variant","dissimilar",2,"order4",5
+"5d74001d391b6600175f433b",2023-07-20 05:30:55,"Yes","Yes",2,5,"Mandarin",2,"Asia",5,"[""acc_l2""]",3,"English","Eastern",NA,"variant","similar",2,"order4",5
+"60d13d406f3b34d6791c8831",2023-07-20 06:03:36,"Yes","Yes",2,5,"Mandarin",3,"Asia",3,"[""acc_social"",""acc_l2"",""acc_ex""]",4,"English","Eastern",NA,"variant","control",1,"order4",5
+"5acc2d21436f550001003111",2023-07-20 05:05:43,"Yes","No",3,4,"Bengali",3,"Asia",4,"[""acc_l2""]",NA,NA,"Southern",NA,"invariant","dissimilar",1,"order4",5
+"649d257f5e8bfe6ee264e160",2023-07-20 04:24:15,"Yes","No",3,4,"English",4,"Americas",2,"[""acc_us""]",NA,NA,"Northern","United States of America","variant","similar",1,"order4",5
+"630adf01fe54101d5214a17f",2023-07-20 05:38:25,"Yes","Yes",2,4,"Spanish",4,"Americas",5,"[""acc_ex"",""acc_l2""]",2,"English","Southern","Argentina","variant","similar",1,"order4",5
+"60e8a63f733f423be3da1846",2023-07-20 04:00:01,"Yes","Yes",3,3,"Spanish",3,"Europe",4,"[""acc_l2""]",3,"English","Eastern",NA,"variant","dissimilar",1,"order4",5
+"64013d507ab5a4cdc0c1a29a",2023-07-20 04:57:05,"Yes","Yes",2,4,"Hindi",3,"Oceania",4,"[""acc_ex"",""acc_social"",""acc_l2""]",5,"Hindi","Melanesia",NA,"variant","control",2,"order4",5
+"6000cefee380e61fa9bc5ae4",2023-07-20 05:14:33,"Yes","Yes",3,4,"Russian",3,"Europe",3,"[""acc_ex"",""acc_l2""]",4,"English","Eastern",NA,"invariant","similar",2,"order4",5
+"5b9c2c816f92f30001ecce7a",2023-07-20 05:26:48,"Yes","Yes",3,5,"Spanish",3,"Americas",5,"[""acc_social"",""acc_us""]",3,"English","Central","Mexico","invariant","similar",2,"order4",5
+"5d979a7705d4d60017b154c6",2023-07-20 05:05:53,"Yes","Yes",2,3,"Mandarin",3,"Asia",5,"[""acc_ex""]",3,"English","Eastern",NA,"variant","control",2,"order4",5
+"6165d57d7256ba57447e76b5",2023-07-20 05:26:35,"Yes","No",3,4,"Standard Arabic",2,"Asia",4,"[""acc_ex"",""acc_l2"",""acc_social""]",NA,NA,"Western",NA,"variant","similar",2,"order4",5
+"63ced5ba289fa7af427c3740",2023-07-20 04:32:49,"Yes","Yes",2,4,"Spanish",2,"Americas",4,"[""acc_social"",""acc_ex"",""acc_l2""]",3,"English","Southern","Venezuela","invariant","dissimilar",2,"order4",5
+"5d5f0b2e0e71190019c643f7",2023-07-20 05:33:04,"Yes","Yes",4,5,"Hindi",4,"Asia",2,"[""acc_social""]",5,"English","Southeastern",NA,"invariant","similar",1,"order4",5
+"62bd2a704c56e669cce7ce56",2023-07-20 05:34:22,"Yes","Yes",3,5,"Mandarin",4,"Asia",4,"[""acc_l2""]",2,"English","Eastern",NA,"variant","similar",1,"order4",5
+"62a2adb16716c2e0c8d3c07a",2023-07-20 05:41:31,"Yes","Yes",3,4,"Standard Arabic",4,"Africa",3,"[""acc_ex""]",4,"English","Eastern",NA,"variant","dissimilar",2,"order4",5
+"5fd18d125e1f92195b1717bc",2023-07-20 05:46:53,"Yes","Yes",3,4,"French",3,"Europe",5,"[""acc_ex"",""acc_slp""]",3,"English","Western",NA,"variant","control",2,"order4",5
+"5e4e844553bc702cdf68404d",2023-07-20 06:32:14,"Yes","Yes",2,4,"Hindi",3,"Americas",2,"[""acc_l2""]",3,"English","Northern","United States of America","variant","control",1,"order4",5
+"5f5aa60bef062519ff711fe6",2023-07-20 07:18:58,"Yes","No",3,3,"Mandarin",3,"Asia",3,"[""acc_ex"",""acc_l2""]",NA,NA,"Eastern",NA,"invariant","dissimilar",1,"order4",5
+"58cdee8b8460040001e1edb4",2023-07-20 16:34:30,"Yes","Yes",3,5,"Mandarin",3,"Asia",5,"[""acc_ex"",""acc_l2""]",5,"Mandarin","Central",NA,"invariant","similar",1,"order4",5
+"5f47fbe03c255115b01b09cf",2023-07-20 05:33:27,"Yes","Yes",2,4,"Portuguese",3,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Western",NA,"variant","control",2,"order4",5
+"63d6f2705562fd353b7948dc",2023-07-20 05:42:33,"Yes","Yes",2,5,"Spanish",2,"Asia",5,"[""acc_ex""]",2,"English","Central",NA,"invariant","dissimilar",2,"order4",5
+"5a04869ff2e3460001edad2e",2023-07-20 04:39:58,"Yes","Yes",2,5,"Russian",3,"Europe",5,"[""acc_l2""]",3,"English","Eastern",NA,"variant","dissimilar",2,"order4",5
+"5f6e36c7f042f033d0f97bc1",2023-07-20 05:42:46,"Yes","Yes",4,3,"None of these",3,"Asia",4,"[""acc_l2"",""acc_ex""]",3,"English","Eastern",NA,"variant","dissimilar",2,"order4",5
+"5fcc103fb2ab80a01f32f7ae",2023-07-20 05:05:13,"Yes","Yes",4,5,"Standard Arabic",4,"Africa",4,"[""acc_ex"",""acc_social""]",5,"Standard Arabic","Northern",NA,"variant","similar",2,"order4",5
+"60fcfc727484888d11fac02a",2023-07-20 05:05:56,"Yes","Yes",3,5,"Standard Arabic",4,"Americas",3,"[""acc_social"",""acc_l2""]",4,"English","Northern","United States of America","invariant","similar",1,"order4",5
+"5b6515e83662a8000158b2aa",2023-07-20 05:14:07,"Yes","Yes",2,5,"Russian",3,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Eastern",NA,"variant","control",2,"order4",5
+"5826340fc8fa310001000e20",2023-09-09 21:12:03,"Yes","Yes",4,5,"Spanish",4,"Americas",3,"[""acc_l2"",""acc_social""]",4,"English","Southern","Colombia","invariant","control",3,"order4",5
+"615a084387075364a7462335",2023-09-09 21:08:28,"Yes","Yes",3,5,"Urdu",3,"Africa",4,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"Standard Arabic","Northern",NA,"invariant","similar",3,"order4",5
+"6108b47894667158bad7b56e",2023-09-09 21:13:06,"Yes","Yes",4,5,"Spanish",4,"Europe",3,"[""acc_ex""]",4,"Urdu","Western",NA,"variant","dissimilar",3,"order4",5
+"5d8d12f6d88e3a00142c9751",2023-09-09 21:03:39,"Yes","Yes",4,4,"Mandarin",4,"Asia",4,"[""acc_ex"",""acc_l2""]",4,"English","Eastern",NA,"variant","control",3,"order4",5
+"5c19d6768e10de0001ff255f",2023-09-09 20:30:53,"Yes","Yes",3,5,"Hindi",3,"Asia",3,"[""acc_ex"",""acc_social"",""acc_us"",""acc_l2""]",4,"English","Southeastern",NA,"invariant","dissimilar",3,"order4",5
+"5f5e32a0d6a12c6857b8e127",2023-09-09 22:59:11,"Yes","No",2,2,"English",2,"Europe",5,"[""acc_ex""]",NA,NA,"Western",NA,"invariant","dissimilar",3,"order4",5
+"58757c2758ca4c00018ce73f",2023-09-09 21:11:39,"Yes","Yes",4,5,"Russian",4,"Europe",3,"[""acc_ex""]",4,"English","Eastern",NA,"variant","control",3,"order4",5
+"62fbdda6e4b5a034b71296f8",2023-09-09 21:15:21,"Yes","Yes",3,5,"Hindi",3,"Asia",5,"[""acc_ex"",""acc_l2"",""acc_social""]",4,"English","Southern",NA,"variant","similar",3,"order4",5
+"5c67a79a2f6d5e000174ced0",2023-09-09 21:30:45,"Yes","No",4,1,"None of these",4,"Europe",5,"[""acc_l2""]",NA,NA,"Eastern",NA,"variant","similar",3,"order4",5
+"585aefed73f2620001c21d75",2023-09-09 20:39:41,"Yes","Yes",2,5,"Spanish",3,"Americas",5,"[""acc_ex""]",3,"English","Southern","Colombia","variant","control",3,"order4",5
+"5ef246c6d2b9060809858e7e",2023-09-09 21:07:27,"Yes","No",2,5,"Standard Arabic",3,"Asia",5,"[""acc_l2""]",NA,NA,"Eastern",NA,"invariant","similar",3,"order4",5
+"5b53e95f4bbe600001465c18",2023-09-09 21:11:16,"Yes","Yes",2,5,"Spanish",2,"Americas",5,"[""acc_social"",""acc_l2"",""acc_ex""]",3,"English","Central","Mexico","variant","dissimilar",3,"order4",5
+"60c948db3f288a3058c67f98",2023-09-09 21:13:28,"Yes","Yes",2,1,"Standard Arabic",3,"Asia",5,"[""acc_ex""]",3,"English","Central",NA,"variant","similar",3,"order4",5
+"62e750fa810b090c094dc2f0",2023-09-09 21:32:43,"Yes","Yes",3,5,"Portuguese",4,"Europe",4,"[""acc_l2""]",2,"English","Western",NA,"invariant","similar",3,"order4",5
+"5fc6df58f380620a09116434",2023-09-09 21:18:02,"Yes","Yes",3,5,"Spanish",2,"Americas",4,"[""acc_ex"",""acc_l2""]",4,"English","Central","Guatemala	","invariant","similar",3,"order4",5
+"6154c1748e0de2c3afdab62c",2023-09-09 21:20:07,"Yes","Yes",2,4,"Mandarin",3,"Asia",5,"[""acc_l2""]",2,"English","Southeastern",NA,"invariant","dissimilar",3,"order4",5
+"5d612ae16512d700159face7",2023-09-09 23:04:59,"Yes","Yes",3,4,"French",3,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Western",NA,"invariant","dissimilar",3,"order4",5
+"62a8f6b1a7a7e5eb492c0231",2023-09-10 03:26:02,"Yes","Yes",2,5,"Bengali",3,"Asia",3,"[""acc_l2"",""acc_social""]",3,"English","Southeastern",NA,"variant","similar",3,"order4",5
+"628804d2d0584458ddaafc0c",2023-07-26 16:43:44,"Yes","Yes",2,5,"Russian",3,"Europe",4,"[""acc_l2""]",3,"English","Eastern",NA,"invariant","control",2,"order1",6
+"5e1d70edd727e90dea42d137",2023-07-26 17:05:51,"Yes","Yes",4,3,"French",4,"Europe",5,"[""acc_l2""]",5,"English","Western",NA,"invariant","control",1,"order1",6
+"5f39eb3c94f71318adf97910",2023-07-26 17:11:48,"Yes","Yes",1,5,"Spanish",2,"Americas",5,"[""acc_ex"",""acc_l2"",""acc_social""]",4,"English","Central","Mexico","invariant","control",2,"order1",6
+"5ef98087540ce971a8fb4280",2023-07-26 17:22:30,"Yes","Yes",2,4,"Hindi",2,"Asia",4,"[""acc_l2""]",3,"English","Southern",NA,"invariant","control",2,"order1",6
+"607134f478e13587bd89e13a",2023-07-26 16:37:04,"Yes","Yes",3,5,"Bengali",3,"Africa",5,"[""acc_ex"",""acc_social"",""acc_l2""]",3,"English","Western",NA,"invariant","control",1,"order1",6
+"61267e282a445af9eb95beae",2023-07-26 16:37:21,"Yes","Yes",3,5,"Hindi",3,"Asia",3,"[""acc_social"",""acc_l2""]",3,"English","Southern",NA,"invariant","control",2,"order1",6
+"63ea54cae81a2baf10a14930",2023-07-26 17:05:56,"Yes","Yes",3,5,"Russian",3,"Europe",4,"[""acc_l2"",""acc_social""]",4,"English","Eastern",NA,"invariant","control",1,"order1",6
+"5e7fefe06c12706d47e35211",2023-07-26 17:09:41,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_ex"",""acc_l2""]",4,"English","Western",NA,"invariant","control",1,"order1",6
+"59f77d39b47dfc0001b660ea",2023-07-26 17:19:48,"Yes","Yes",2,3,"None of these",3,"Asia",5,"[""acc_l2"",""acc_ex""]",4,"English","Eastern",NA,"invariant","control",1,"order1",6
+"60d2a92c1f66a1f2416f1d33",2023-07-26 21:06:28,"Yes","Yes",4,5,"Hindi",4,"Asia",2,"[""acc_l2""]",5,"Hindi","Southern",NA,"invariant","control",2,"order4",5
+"63616ac9601c2ac49b1cc4af",2023-07-26 18:36:08,"Yes","Yes",4,5,"Spanish",4,"Americas",4,"[""acc_l2""]",3,"English","Southern","Colombia","invariant","control",1,"order4",5
+"610878f08e2b6c83ea3905da",2023-07-26 20:52:56,"Yes","Yes",3,5,"Spanish",3,"Americas",3,"[""acc_social"",""acc_l2""]",4,"English","Central","Costa Rica","invariant","control",1,"order4",5
+"6278700097208c3f1b717481",2023-07-26 22:51:48,"Yes","Yes",4,4,"None of these",4,"Europe",2,"[""acc_l2""]",4,"None of these","Southern",NA,"invariant","control",2,"order3",4
+"5c82c9a4d8302a00010639b8",2023-07-26 21:18:58,"Yes","Yes",3,5,"Hindi",3,"Asia",4,"[""acc_ex"",""acc_l2""]",4,"English","Central",NA,"invariant","control",2,"order4",5
+"60e678d3668a47695ccfe841",2023-07-26 21:12:52,"Yes","Yes",2,4,"Mandarin",2,"Asia",5,"[""acc_social"",""acc_l2""]",5,"English","Southeastern",NA,"invariant","control",1,"order4",5
+"5f20c7843957f61f62c58bb6",2023-07-26 21:22:05,"Yes","Yes",4,5,"Spanish",4,"Americas",4,"[""acc_l2""]",5,"English","Central","Mexico","invariant","control",1,"order4",5
+"5dddd95d238a91d4fa1a8cf6",2023-07-26 21:15:46,"Yes","Yes",4,3,"Standard Arabic",3,"Asia",3,"[""acc_social"",""acc_ex""]",3,"English","Western",NA,"invariant","control",1,"order4",5
+"62fd19522ad91588ac9881e7",2023-07-26 20:31:09,"Yes","Yes",3,4,"Standard Arabic",3,"Asia",4,"[""acc_ex"",""acc_social"",""acc_l2""]",4,"English","Western",NA,"invariant","control",1,"order4",5
+"6401fab47eb81e7326152d8e",2023-07-26 20:53:34,"Yes","Yes",4,5,"Spanish",3,"Americas",3,"[""acc_l2""]",5,"Spanish","Southern","Peru","invariant","control",1,"order4",5
+"6111234ac8cfa49e38acbfb4",2023-07-26 21:00:53,"Yes","Yes",3,5,"Spanish",3,"Americas",4,"[""acc_social"",""acc_ex"",""acc_l2""]",4,"English","Southern","Brazil","invariant","control",1,"order4",5
+"610247cdbc9b348fd6601cb3",2023-07-26 21:08:48,"Yes","Yes",3,5,"Mandarin",4,"Asia",3,"[""acc_ex"",""acc_l2"",""acc_social""]",3,"English","Eastern",NA,"invariant","control",2,"order4",5
+"60bfe979f044ae9801bac501",2023-07-26 21:18:08,"No","Yes",4,5,"English",3,"Europe",NA,NA,1,"Russian","Southern",NA,"invariant","control",1,"order4",5
+"5ecfe4891d96f707354f918b",2023-07-26 21:22:56,"Yes","Yes",2,1,"French",2,"Europe",4,"[""acc_ex""]",2,"English","Southern",NA,"invariant","control",2,"order4",5
+"58ae37d8e6afe00001d36ac9",2023-07-26 21:22:32,"Yes","Yes",2,4,"Spanish",3,"Americas",5,"[""acc_ex"",""acc_social"",""acc_l2""]",2,"English","Southern","Colombia","invariant","control",2,"order4",5
+"6135752aa4ee5158b0708670",2023-07-26 21:38:13,"No","No",4,5,"English",5,"Americas",NA,NA,NA,NA,"Northern","United States of America","invariant","control",1,"order4",5
+"611e0d3c67d86e1ff9f58428",2023-07-26 23:32:10,"Yes","Yes",2,4,"Portuguese",2,"Europe",4,"[""acc_ex"",""acc_l2"",""acc_social""]",2,"English","Western",NA,"invariant","control",2,"order3",4
+"64148386b15c3ddfef1fcd69",2023-07-26 23:42:17,"Yes","Yes",2,4,"Russian",2,"Europe",3,"[""acc_l2""]",4,"English","Eastern",NA,"invariant","control",1,"order3",4
+"6127c369bdff7dc17f0724a2",2023-07-27 00:06:32,"Yes","Yes",4,5,"Mandarin",4,"Asia",4,"[""acc_l2""]",5,"English","Central",NA,"invariant","control",1,"order3",4
+"5cf4bf2e7e2e1400177f2cc8",2023-07-26 23:30:42,"Yes","Yes",3,5,"Portuguese",3,"Europe",5,"[""acc_l2""]",3,"English","Southern",NA,"invariant","control",2,"order3",4
+"5f038dc85819b15b08840dfd",2023-07-26 23:53:34,"Yes","Yes",4,4,"Spanish",4,"Americas",4,"[""acc_l2""]",3,"English","Central","Costa Rica","invariant","control",2,"order3",4
+"5cf961c4e5e7c70015fa7a10",2023-07-27 01:31:18,"Yes","Yes",2,5,"Hindi",3,"Asia",4,"[""acc_ex"",""acc_l2""]",3,"English","Southern",NA,"invariant","control",1,"order2",3
+"640b129fbdcd3bb1c4f1f7fe",2023-07-27 02:09:44,"Yes","No",3,2,"English",4,"Asia",2,"[""acc_ex""]",NA,NA,"Western",NA,"invariant","control",2,"order2",3
+"61004696895aeda4629ecd6e",2023-07-27 01:16:35,"Yes","Yes",4,5,"Hindi",4,"Asia",3,"[""acc_social"",""acc_l2""]",4,"English","Southern",NA,"invariant","control",2,"order2",3
+"5f50b1bbe29c992335098fb1",2023-07-27 01:39:41,"Yes","Yes",2,4,"Hindi",3,"Africa",3,"[""acc_ex"",""acc_l2""]",3,"English","Middle",NA,"invariant","control",2,"order2",3
+"615327ab3d238b032366a545",2023-07-27 02:04:42,"Yes","Yes",2,5,"Spanish",3,"Europe",4,"[""acc_ex"",""acc_l2""]",3,"English","Western",NA,"invariant","control",2,"order2",3

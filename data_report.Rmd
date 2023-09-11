@@ -1,0 +1,613 @@
+---
+title: "Experiment 1 data report"
+author: Holly Zaharchuk
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{r setup}
+# Load packages
+library(tidyverse)
+library(lme4)
+library(knitr)
+library(emmeans)
+
+# Read in participant data
+dat_par <- read.csv("data/dat_par.csv") %>%
+  mutate(speaker = factor(speaker, levels = 3:6),
+         similarity = factor(similarity, 
+                             levels = c("similar", "dissimilar", "control")),
+         variability = factor(variability, 
+                              levels = c("variant", "invariant")))
+
+# Read in data from exposure task and make factors
+dat_exp <- read.csv("data/dat_exp.csv") %>%
+  mutate(across(.cols = c("participant", "order", "stim", "type"),
+                .fun = as.factor),
+         speaker = factor(speaker, levels = 3:6),
+         stim_onset = factor(stim_onset, 
+                             levels = c("p", "t", "k", 
+                                        "b", "d", "g", 
+                                        "f", "s", "S",
+                                        "m", "n", "r", "l", "h", "w")),
+         similarity = factor(similarity, 
+                             levels = c("similar", "dissimilar", "control")),
+         stim_cond = factor(stim_cond, 
+                            levels = c("similar", "dissimilar", 
+                                       "control", "filler")),
+         variability = factor(variability, 
+                              levels = c("variant", "invariant"))) %>%
+  select(-c(date_exp, par_code))
+
+# Read in data from test task and make factors
+dat_test <- read.csv("data/dat_test.csv") %>%
+  mutate(across(.cols = c("participant", "order", "prime", "target"),
+                .fun = as.factor),
+         speaker = factor(speaker, levels = 3:6),
+         match_list = factor(match_list, levels = 1:3),
+         prime_onset = factor(prime_onset, 
+                              levels = c("p", "t", "k", 
+                                         "m", "n", "r", "l", "h", "w")),
+         similarity = factor(similarity, 
+                             levels = c("similar", "dissimilar", "control")),
+         variability = factor(variability, 
+                              levels = c("variant", "invariant")),
+         match_type = factor(match_type, 
+                             levels = c("match", "mismatch", "control"), 
+                             labels = c("match", "competitor", "unrelated")),
+         prime_cond = factor(prime_cond, 
+                             levels = c("target", "filler"), 
+                             labels = c("critical", "filler"))) %>%
+  select(-c(date_test, par_code))
+```
+
+# Participants
+
+Participants were recruited through the online platform Prolific.
+Participants must have met the following criteria in order to participate:
+
+- Age between 18 and 40 years old
+- Currently located in the US
+- First language: English
+- Fluent languages: English
+- Language-related disorders: none
+- Hearing difficulties: no
+- Normal or corrected-to-normal vision: yes
+
+Before the participants began the first task, they completed a headphone check.
+They had two attempts to pass, defined as 5/6 or more correct.
+If they failed twice, they were not allowed to continue.
+After the first task was introduced, there was a practice session.
+Participants who scored 50% or lower on the practice were not allowed to continue.
+
+The screening criteria from Prolific were cross-checked with participants' responses to a post-experiment questionnaire.
+The post-experiment questionnaire was also used to screen for the following criteria:
+
+- Monolingual (par_bilingual = No)
+- First language English (par_lang_1 = English) and current proficiency self-rating 5/5 (par_fluency_1 = 5)
+
+Participants who did not meet these criteria were excluded from analysis.
+Participants with incomplete data sets were also excluded.
+
+Finally, participants with low data quality were excluded.
+Low data quality was defined as:
+
+- Accuracy indistinguishable from chance (50%) in either task
+- More than 10% of trials with responses fewer than 50 ms in either task
+
+This left `r nrow(dat_par)` participants.
+
+```{r pars_1}
+# Show first 5 rows
+head(dat_par, 5)
+```
+
+# Design
+
+## Exposure phase (Task 1)
+
+Participants completed a lexical decision task.
+Their job was to indicate whether the item was a real word or not by pressing the d or k key on their keyboard.
+Accuracy and reaction time were measured.
+Reaction time was measured from the onset of the sound file; annotation is currently in progress to measure the exact onset of each item within the sound file.
+
+```{r task1_1}
+# Show first 5 rows
+head(dat_exp, 5)
+```
+
+There were six between-subjects conditions that were created by crossing two factors:
+
+- Similarity: similar, dissimilar, control
+- Variability: variant, invariant
+
+Similarity was operationalized as the correspondence between the onsets of the critical items in the exposure task and those in the test task, which were /p t k/:
+
+- Similar = /p t k/
+- Dissimilar = /b d g/
+- Control = /f s S/
+
+For example, participants in the two similar conditions would hear critical items with /p t k/ onsets.
+Critically, these participants would *not* hear any items with /b d g/ or /f s S/ onsets.
+
+Regardless of condition, participants heard filler items with /m n r l h w/ onsets.
+Onsets are labeled as *stim_onset*.
+The variable *stim_cond* refers to the category of onset that the item is in, while the variable *similarity* refers to the condition that the participant is in.
+For example, participants with similar *similarity* would hear items with both similar and filler *stim_cond*.
+
+```{r task1_2}
+# Show number of items per similarity factor by onset
+dat_exp %>%
+  group_by(similarity, stim_cond, stim_onset) %>%
+  summarise(items = n_distinct(stim), .groups = "keep") %>%
+  pivot_wider(id_cols = c(stim_cond, stim_onset), 
+              names_from = similarity, values_from = items,
+              names_glue = "items in {similarity} conditions") %>%
+  mutate(across(.cols = everything(), .fn = ~replace_na(., 0))) %>%
+  kable()
+```
+
+Items were evenly divided into real words and nonwords, labeled as *type*, across onsets.
+
+```{r task1_3}
+# Show breakdown of real words vs. nonwords
+dat_exp %>%
+  group_by(stim_cond, type) %>%
+  summarise(items = n_distinct(stim), .groups = "keep") %>%
+  pivot_wider(id_cols = type, names_from = stim_cond, values_from = items,
+              names_glue = "items for {stim_cond} onsets") %>%
+  kable()
+```
+
+Variability was operationalized as the correspondence between the onsets of items in the exposure task and the number of speakers per onset:
+
+- Invariant = one speaker assigned to the items with a given onset
+- Variant = all three speakers assigned to items with a given onset
+
+For example, in the similar-variant condition, Speaker 3 would produce one third of the /p/ items, /t/ items, and /k/ items. In the similar-invariant condition, Speaker would produce all of the /p/ items, but none of the /t/ or /k/ items.
+
+Filler items were also subject to the Variability manipulation.
+In the variant conditions, all three speakers produced items with all six filler onsets.
+In the invariant conditions, the following assignment was used:
+
+- The speaker assigned to pre-alveolar critical onsets (/p/, /b/, or /f/) produced /m/ and /n/ fillers
+- The speaker assigned to alveolar critical onsets (/t/, /d/, or /s/) produced /l/ and /r/ fillers
+- The speaker assigned to post-alveolar critical onsets (/k/, /g/, or /S/) produced /h/ and /w/ fillers
+
+All participants heard the same four speakers across the two tasks: three in the exposure task and one in the test task.
+Speaker assignment to exposure vs. test was counter-balanced across participants in four experimental lists, labeled as *order*.
+Within each experimental list, for the invariant conditions, speakers were assigned to each onset in a Latin-square design.
+
+```{r task1_4}
+# Show number of onsets per speaker and order by condition
+dat_exp %>%
+  group_by(variability, stim_cond, order, speaker) %>%
+  summarise(onsets = n_distinct(stim_onset), .groups = "keep") %>%
+  pivot_wider(id_cols = c(variability, stim_cond, order), names_from = speaker, values_from = onsets,
+              names_glue = "speaker {speaker} onsets") %>%
+  mutate(across(.cols = everything(), .fn = ~replace_na(., 0))) %>%
+  kable()
+```
+
+Participants were assigned randomly to one of the six conditions.
+Due to limitations in Pavlovia where the experiment was hosted, each of the four speaker assignment orders was run in succession.
+This resulted in 24 total combinations of exposure condition and order.
+
+```{r pars_2}
+# Show number of participants per condition
+dat_par %>%
+  group_by(variability, similarity, order) %>%
+  summarise(participants = n_distinct(participant), .groups = "keep") %>%
+  pivot_wider(id_cols = c(variability, similarity), names_from = order, values_from = participants) %>%
+  kable()
+```
+
+Assignment of the d/k keys to real word vs. nonword responses was also counter-balanced, labeled as *real_resp*.
+The *resp* variable refers to the participant's actual response.
+
+## Test phase (Task 2)
+
+Participants completed a matching task.
+Their job was to indicate whether the item they heard matched the item they saw or not by pressing the d or k key on their keyboard.
+Accuracy and reaction time were measured.
+Reaction times were measured from the onset of the visual item.
+
+```{r task2_1}
+# Show first 5 rows
+head(dat_test, 5)
+```
+
+All participants heard the same set of prime words.
+Critical items began with /p t k/ and filler items began with /m n r l h w/.
+
+There were three types of relations between the auditory prime and visual target, labeled as *match_type*:
+
+- Match = exact match (park-park) = "yes" response
+- Competitor = different onset (park-bark) = "no" response
+- Unrelated = different word with same vowel (park-wand) = "no" response
+
+```{r task2_2}
+# Show breakdown of match_type
+dat_test %>%
+  group_by(match_type, prime_cond) %>%
+  summarise(primes = n_distinct(prime)/n_distinct(match_list), .groups = "keep") %>%
+  pivot_wider(id_cols = match_type, names_from = prime_cond, values_from = primes,
+              names_glue = "items for {prime_cond} onsets") %>%
+  kable()
+```
+
+The assignment of the match type to each item was counter-balanced across three experimental lists, labeled as *match_list*.
+Speaker assignment was counter-balanced according to the exposure task.
+This resulted in 12 total combinations of speaker assignment and match type.
+
+```{r task2_3}
+# Show number of primes per onset
+dat_test %>%
+  group_by(match_list, order) %>%
+  summarise(participants = n_distinct(participant), .groups = "keep") %>%
+  pivot_wider(id_cols = match_list, names_from = order, values_from = participants) %>%
+  kable()
+```
+
+Assignment of the d/k keys to "yes" vs. "no" responses followed the assignment of real word vs. nonword responses, respectively, in the exposure task.
+
+# Data
+
+Since analyses will be focused on the critical items, the data was filtered for those items.
+Responses with reaction times less than 50 ms were discarded.
+
+```{r filter_dat}
+# Restrict to critical items
+dat_test_clean <- dat_test %>% 
+  dplyr::filter(prime_cond == "critical" & resp_rt > 50)
+```
+
+## Reaction time
+
+```{r test_rt, dpi = 300}
+ggplot(data = dat_test_clean %>% 
+         dplyr::filter(resp_rt < 2000 & resp_acc == 1), 
+       aes(x = resp_rt, color = interaction(variability, similarity), fill = interaction(variability, similarity))) +
+  geom_histogram(position = "stack", binwidth = 10) +
+  scale_color_brewer(type = "qual", palette = "Paired", name = "exposure condition") +
+  scale_fill_brewer(type = "qual", palette = "Paired", name = "exposure condition") +
+  theme_minimal()
+```
+
+## Accuracy
+
+Plotting by-participant means since raw values are binary (1,0).
+
+```{r test_acc, dpi = 300}
+ggplot(data = dat_test_clean %>%
+         group_by(match_type, variability, similarity, participant) %>%
+         summarise(mean_acc = mean(resp_acc), .groups = "keep"), 
+       aes(x = match_type, y = mean_acc,
+           fill = interaction(variability, similarity))) +
+  geom_boxplot() +
+  scale_fill_brewer(type = "qual", palette = "Paired", name = "exposure condition") +
+  theme_minimal()
+```
+
+# Analysis
+
+## Prep
+
+### Dependent variable
+
+Analysis of reaction time data was restricted to correct responses.
+Outliers were detected using the adjusted boxplot method for skewed data from Hubert and Vandervieren (2008).
+
+```{r rt_1}
+# Filter for correct responses
+dat_test_rt <- dat_test_clean %>% dplyr::filter(resp_acc == 1)
+
+# Go through data and get outlier info
+rt_outliers <- dat_test_rt %>%
+  pull(resp_rt) %>%
+  robustbase::adjboxStats() %>%
+  .$fence
+
+# Pull values
+rt_upper <- max(rt_outliers)
+rt_lower <- min(rt_outliers)
+
+# Filter data
+dat_test_rt <- dat_test_rt %>%
+  dplyr::filter(resp_rt > rt_lower & resp_rt < rt_upper)
+```
+
+Given the skewness of the reaction time data, raw values were inverse transformed for analysis.
+
+```{r rt_2, dpi = 300}
+# Transform reaction time
+dat_test_rt <- dat_test_rt %>%
+  mutate(inv_rt = -1000/resp_rt)
+
+# Look at distribution of transformed values
+ggplot(data = dat_test_rt, 
+       aes(x = inv_rt, color = interaction(variability, similarity), fill = interaction(variability, similarity))) +
+  geom_histogram(binwidth = 0.01) +
+  scale_color_brewer(type = "qual", palette = "Paired", name = "exposure condition") +
+  scale_fill_brewer(type = "qual", palette = "Paired", name = "exposure condition") +
+  theme_minimal()
+```
+
+### Independent variables
+
+Similarity and Match type each have three levels.
+Helmert contrasts were used for these factors.
+Simple contrast codes were used for Variability.
+Trial number was mean-centered.
+
+```{r rt_3}
+# Create contrast codes
+contrast_var <- tibble(variability = c("variant", "invariant"), cc_var = c(1/2, -1/2))
+contrast_sim <- tibble(similarity = c("similar", "dissimilar", "control"),
+                       cc_sim_1 = c(1/2, -1/2, 0),
+                       cc_sim_2 = c(-1/3, -1/3, 2/3))
+contrast_match <- tibble(match_type = c("match", "competitor", "unrelated"),
+                         cc_match_1 = c(1/2, -1/2, 0),
+                         cc_match_2 = c(-1/3, -1/3, 2/3))
+
+# Add codes to dataframe and mean-center trial
+dat_test_rt <- dat_test_rt %>%
+  left_join(contrast_var, by = "variability") %>%
+  left_join(contrast_sim, by = "similarity") %>%
+  left_join(contrast_match, by = "match_type") %>%
+  mutate(trial_cent = trial - mean(trial))
+```
+
+## Model construction
+
+I am interested in modeling the three-way interaction among Variability, Similarity, and Match type.
+Variability and Similarity are between-subjects and Match type is within-subjects.
+Because Similarity and Match type are both three-level factors with two sets of contrast codes, I think I need to model every combination of interactions between these contrast codes, but I'm not sure.
+
+In addition, I am interested in modeling item-level and participant-level random effects.
+For item-level effects, all participants heard the same primes.
+Each prime could be followed by one of three potential targets depending on the match list.
+This means that any given participant received 1/3 of all possible prime-target pairings.
+I think it would be correct to say that target is nested within prime, but I'm not sure.
+For participant-level effects, each participant heard one of four potential speakers depending on the order list.
+I think it would also be correct to say that participant is nested within order, but again I'm not sure.
+
+## Omnibus model
+
+I ran the following omnibus model to analyze the fixed effects of Variability and Similarity during exposure and Match type during test, at the midpoint of the task, with random intercepts for target nested in prime and participant nested in order, on inverse reaction times for correct responses.
+
+```{r rt_4}
+# Run omnibus model
+omni_rt <- lmer(inv_rt ~ cc_var:cc_sim_1:cc_match_1 + cc_var:cc_sim_1:cc_match_2 +
+                  cc_var:cc_sim_2:cc_match_2 + cc_var:cc_sim_2:cc_match_1 +
+                  cc_var:cc_sim_1 + cc_var:cc_sim_2 + 
+                  cc_var:cc_match_1 + cc_var:cc_match_2 +
+                  cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 + 
+                  cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                  cc_var + cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                  trial_cent +
+                  (1|prime/target) + (1|order/participant),
+                data = dat_test_rt)
+
+# Elaborated version of:
+# cc_var*cc_sim_1*cc_match_1 +
+# cc_var*cc_sim_1*cc_match_2 +
+# cc_var*cc_sim_2*cc_match_2 +
+# cc_var*cc_sim_2*cc_match_1
+
+# Show summary
+summary(omni_rt)
+```
+
+The estimated marginal means for the two levels of Variability, the first Similarity contrast code comparing similar and dissimilar exposure, and the first Match type contrast code comparing match and competitor prime-target pairs are shown below.
+
+```{r rt_5}
+# Look at marginal means
+emmeans(omni_rt, ~ cc_var:cc_sim_1:cc_match_1, 
+        at = list(cc_var = c(1/2,-1/2), cc_sim_1 = c(1/2,-1/2), cc_match_1 = c(1/2,-1/2)), 
+        lmer.df = "asymp") %>%
+  summary() %>%
+  mutate(pred_rt = -1000/emmean) %>%
+  left_join(contrast_var, by = "cc_var") %>%
+  left_join(contrast_sim, by = "cc_sim_1") %>%
+  left_join(contrast_match, by = "cc_match_1") %>%
+  select(variability, similarity, match_type, pred_rt) %>%
+  arrange(pred_rt) %>%
+  kable()
+```
+
+## Model comparison
+
+The Variability x Similarity x Match type interaction was implemented in the model as the four unique combinations of the contrast codes for the three variables.
+Typically, to assess the significance of a factor in a mixed-effects model, that specific factor would be removed from a secondary model, and then the primary and secondary models would be compared.
+Here, because one factor is implemented as four, it was unclear to me how to proceed.
+
+Because I am most interested in the similar vs. dissimilar contrast (*cc_sim_1*) for Similarity and the match vs. competitor contrast (*cc_match_1*) for Match type, I decided to remove the one term that corresponded to the interaction between these two sets of contrast codes and Variability.
+I then compared the omnibus model to this model without the *cc_var:cc_sim_1:cc_match_1* term.
+
+```{r rt_6}
+int_rt <- lmer(inv_rt ~ cc_var:cc_sim_1:cc_match_2 + 
+                 cc_var:cc_sim_2:cc_match_2 + cc_var:cc_sim_2:cc_match_1 +
+                 cc_var:cc_sim_1 + cc_var:cc_sim_2 + 
+                 cc_var:cc_match_1 + cc_var:cc_match_2 +
+                 cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 + 
+                 cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                 cc_var + cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                 trial_cent +
+                 (1|prime/target) + (1|order/participant),
+               data = dat_test_rt)
+aov_int_rt <- anova(int_rt, omni_rt)
+aov_int_rt
+```
+
+Model comparison suggests that the variant/invariant x similar/dissimilar x match/competitor interaction is significant.
+
+## Follow-up analysis
+
+To follow up on the three-way interaction, I first went into one level of Variability and then other, following the same model comparison procedure.
+
+```{r rt_7}
+# Simple effect omnibus model for invariant
+follow_rt_1 <- lmer(inv_rt ~ cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant"))
+
+# Show summary
+summary(follow_rt_1)
+```
+
+```{r rt_8}
+# Interaction between similar/dissimilar and match/competitor
+comp_rt_1_1 <- lmer(inv_rt ~ cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant"))
+aov_comp_rt_1_1 <- anova(comp_rt_1_1, follow_rt_1)
+aov_comp_rt_1_1
+```
+
+Model comparison suggests that the similar/dissimilar x match/competitor interaction is significant in the invariant level of Variability.
+The secondary model without the interaction failed to converge; do I need to do something about this? 
+
+```{r rt_9}
+# Simple effect omnibus model for variant
+follow_rt_2 <- lmer(inv_rt ~ cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "variant"))
+
+# Show summary
+summary(follow_rt_2)
+```
+
+```{r rt_10}
+# Interaction between similar/dissimilar and match/competitor
+comp_rt_2_1 <- lmer(inv_rt ~ cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_1 + cc_sim_2 + cc_match_1 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "variant"))
+aov_comp_rt_2_1 <- anova(comp_rt_2_1, follow_rt_2)
+aov_comp_rt_2_1
+
+# Main effect of similar/dissimilar
+comp_rt_2_2 <- lmer(inv_rt ~ cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_2 + cc_match_1 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "variant"))
+aov_comp_rt_2_2 <- anova(comp_rt_2_2, follow_rt_2)
+aov_comp_rt_2_2
+
+# Main effect of match/competitor
+comp_rt_2_3 <- lmer(inv_rt ~ cc_sim_1:cc_match_1 + cc_sim_1:cc_match_2 +
+                      cc_sim_2:cc_match_1 + cc_sim_2:cc_match_2 +
+                      cc_sim_1 + cc_sim_2 + cc_match_2 +
+                      trial_cent +
+                      (1|prime/target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "variant"))
+aov_comp_rt_2_3 <- anova(comp_rt_2_3, follow_rt_2)
+aov_comp_rt_2_3
+```
+
+Neither the similar/dissimilar x match/competitor interaction nor the main effect of similar/dissimilar was significant in the variant level of Variability.
+There was a main effect of match/competitor.
+
+## Simple effects
+
+To follow up on the similar/dissimilar x match/competitor interaction in the invariant level of Variability, I will first go into one level of the match/competitor contrast, then the other, again following the same model comparison procedure.
+
+```{r rt_11}
+# Simple effect omnibus model for invariant and match
+# Random effect of prime alone removed; within a single level of match type
+# there is a one-to-one relation between prime and target
+follow_rt_1_1 <- lmer(inv_rt ~ cc_sim_1 + cc_sim_2 +
+                      trial_cent +
+                      (1|prime:target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant" &
+                                      match_type == "match"))
+
+# Show summary
+summary(follow_rt_1_1)
+```
+
+```{r rt_12}
+# Simple effect of similar/dissimilar
+simple_rt_1_1 <- lmer(inv_rt ~ cc_sim_2 +
+                      trial_cent +
+                      (1|prime:target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant" &
+                                      match_type == "match"))
+aov_simple_rt_1_1 <- anova(simple_rt_1_1, follow_rt_1_1)
+aov_simple_rt_1_1
+```
+
+```{r rt_13}
+# Simple effect omnibus model for invariant and competitor
+# Random effect of prime alone removed; within a single level of match type
+# there is a one-to-one relation between prime and target
+follow_rt_1_2 <- lmer(inv_rt ~ cc_sim_1 + cc_sim_2 +
+                      trial_cent +
+                      (1|prime:target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant" &
+                                      match_type == "competitor"))
+
+# Show summary
+summary(follow_rt_1_2)
+```
+
+```{r rt_14}
+# Simple effect of similar/dissimilar
+simple_rt_1_2 <- lmer(inv_rt ~ cc_sim_2 +
+                      trial_cent +
+                      (1|prime:target) + (1|order/participant),
+                    dat = dat_test_rt %>% 
+                      dplyr::filter(variability == "invariant" &
+                                      match_type == "competitor"))
+aov_simple_rt_1_2 <- anova(simple_rt_1_2, follow_rt_1_2)
+aov_simple_rt_1_2
+```
+
+The simple effect of the similar/dissimilar contrast was not significant in either invariant-match or invariant-competitor.
+
+I would follow the same process to look at the other contrasts as well.
+Is this the right thing to do?
+I am especially concerned about how to handle the three-level variables with two sets of contrast codes.
+I am also concerned about whether I have specified the random intercepts correctly.
+I didn't even attempt to fit random slopes, but if there is a principled way to do this I would like to.
+I have a few other questions, including:
+
+- Because I am analyzing reaction time here, I restricted the analyses to correct responses. I also removed reaction time outliers. This left very few responses per cell for some participants. Do I need to remove these participants?
+- Does my outlier removal procedure make sense? I detected outliers based on the raw reaction times, but I imagine I could take a different approach with the inverse-transformed values.
+- Is there a way to specify interactions with trial? For example, I imagine that the effects of similar exposure would be strongest at the beginning of the test task. Can I test a Similarity x Trial interaction? How would I do this, since there are 216 trials, and any with incorrect responses have been removed?
+- I will run mixed-effects logistic regression models on trial-level accuracy for this task as well. Is there anything I need to change in terms of model construction?
+
+
+
+
+
+
+
+
+
